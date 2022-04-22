@@ -21,6 +21,8 @@ npm install forecasting
 
 #### Aggregation
 
+````js
+
 ```js
 import {
   median,
@@ -29,7 +31,7 @@ import {
   geometricMeanOfOdds,
   extremizedGeometricMeanOfOdds,
   neyman,
-} from "forecasting";
+} from "@forecasting/aggregation";
 
 let ps = [0.1, 0.2, 0.4, 0.5];
 console.log(ps);
@@ -41,6 +43,29 @@ console.log(geometricMeanOfOdds(ps));
 console.log(extremizedGeometricMeanOfOdds(ps, 1.5)); // 1.5 is the extremization factor
 console.log(extremizedGeometricMeanOfOdds(ps, 2.5));
 console.log(neyman(ps));
+
+// invalid inputs, will return -1
+let notArrayOfProbabilities0 = "Hello world!";
+console.log(arithmeticMean(notArrayOfProbabilities0)); // -1
+let notArrayOfProbabilities1 = [];
+console.log(arithmeticMean(notArrayOfProbabilities1)); // -1
+let notArrayOfProbabilities2 = ["a"];
+console.log(arithmeticMean(notArrayOfProbabilities2)); // -1
+let notArrayOfProbabilities3 = [2, 4, 5];
+console.log(arithmeticMean(notArrayOfProbabilities3)); // -1
+
+const chosenAggregationMethod = neyman;
+const getAggregatedProbabilities = (array) => {
+  let result = neyman(array);
+  if (result == -1) {
+    // handle case somehow; maybe throw an error, e.g.:
+    // throw new Error("Invalid array of probabilities")
+  } else {
+    return result;
+  }
+};
+````
+
 ```
 
 You may also install [@forecasting/aggregation](https://www.npmjs.com/package/@forecasting/aggregation) directly
@@ -57,3 +82,4 @@ To be done
 
 - [ ] Do another repository for scoring methods
 - [ ] Do another repository for charts
+```
