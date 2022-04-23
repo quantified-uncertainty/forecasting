@@ -53,6 +53,8 @@ let notArrayOfProbabilities2 = ["a"];
 console.log(arithmeticMean(notArrayOfProbabilities2)); // -1
 let notArrayOfProbabilities3 = [2, 4, 5];
 console.log(arithmeticMean(notArrayOfProbabilities3)); // -1
+let notArrayOfProbabilities4 = [0.2, 4, 5];
+console.log(arithmeticMean(notArrayOfProbabilities4)); // -1
 
 const chosenAggregationMethod = neyman;
 const getAggregatedProbabilities = (array) => {
