@@ -1,6 +1,6 @@
 {
   "name": "forecasting",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Forecasting related utilities.",
   "main": "index.js",
   "scripts": {
