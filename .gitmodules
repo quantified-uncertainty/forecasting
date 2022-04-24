@@ -1,0 +1,3 @@
+[submodule "src/aggregation"]
+	path = src/aggregation
+	url = ./src/aggregation/
