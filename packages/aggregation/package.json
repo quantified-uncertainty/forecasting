@@ -1,0 +1,19 @@
+{
+  "name": "@forecasting/aggregation",
+  "version": "1.0.1",
+  "description": "Forecasting aggregation utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "keywords": [
+    "forecasting",
+    "aggregation",
+    "prediction",
+    "prediction",
+    "markets"
+  ],
+  "type": "module",
+  "author": "Nuño Sempere",
+  "license": "MIT"
+}

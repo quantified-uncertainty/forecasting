@@ -5,7 +5,7 @@ import {
   geometricMeanOfOdds,
   extremizedGeometricMeanOfOdds,
   neyman,
-} from "./src/aggregation/index.js";
+} from "./packages/aggregation";
 
 export {
   median,
