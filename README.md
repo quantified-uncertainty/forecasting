@@ -22,7 +22,7 @@ npm install forecasting
 
 #### Aggregation
 
-````js
+Aggregation functionality is taken from [@forecasting/aggregation](https://www.npmjs.com/package/@forecasting/aggregation). You may want to install that package directly.
 
 ```js
 import {
@@ -67,11 +67,7 @@ const getAggregatedProbabilities = (array) => {
     return result;
   }
 };
-````
-
 ```
-
-You may also install [@forecasting/aggregation](https://www.npmjs.com/package/@forecasting/aggregation) directly
 
 #### Scoring
 
@@ -85,4 +81,3 @@ To be done
 
 - [ ] Do another repository for scoring methods
 - [ ] Do another repository for charts
-```
