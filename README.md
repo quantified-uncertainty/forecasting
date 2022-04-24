@@ -8,6 +8,7 @@ This package contains a series of utilities related to forecasting. It is curren
 
 - vanilla javascript
 - [Best readme template](https://github.com/othneildrew/Best-README-Template)
+- [lerna](https://github.com/lerna/lerna)
 
 ## Getting started
 
